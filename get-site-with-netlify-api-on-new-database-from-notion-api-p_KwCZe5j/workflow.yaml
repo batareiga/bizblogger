@@ -1,0 +1,18 @@
+schema: workflow/2022.04
+name: Get Site with Netlify API on New Database from Notion API
+settings:
+  error_notification: true
+  lambda_timeout: 130
+triggers:
+- id: dc_V1uDaO2
+steps:
+- namespace: netlify_get_site
+  uses: netlify-get-site@0.1.0
+  props:
+    netlify:
+      authProvisionId: apn_eahKbx9
+    siteId:
+      __lv:
+        label: leafy-frangipane-b19394
+        value: 860b8cc0-7d80-4f78-9e95-51c89d5c3d00
+
